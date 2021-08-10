@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Library</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Library</h1>
+        </header>
+
+        <div id="btn-container">
+            <button id="new-book">+</button>
+        </div>
+
+        <div id="book-container">
+            <div class="book-card">
+                <h3 class="title">Title: asdfgh</h3>
+                <h3 class="author">Author: qwert</h3>
+                <h3 class="pages">Pages: 123</h3>
+                <button class="read-btn">Read</button>
+                <button class="remove-btn">X</button>
+            </div>
+
+        </div>
+
+        <div id="popup">
+
+            <div id="close">
+                <button id="close-btn">X</button>
+            </div>
+
+            <div id="center-div">
+                <form id="form" action="script.js">
+                    <h2 id="form-heading">New book</h2>
+
+                    <div id="text-input">
+                        <input id="title-form" class="popup-input" type="text" placeholder="Title" required>
+                        <input id="author-form" class="popup-input" type="text" placeholder="Author" required>
+                        <input id="pages-form" class="popup-input" type="number" placeholder="Pages" required>
+                    </div>
+
+                    <div id="checkBox">
+                        <label for="is-read">Read?</label>
+                        <input id="is-read" type="checkbox">
+                    </div>
+
+                    <button id="add-btn" type="submit">Add Book</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
